@@ -1,0 +1,229 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 15:20:50  November 19, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		MCXL_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+set_global_assignment -name FAMILY "Cyclone 10 LP"
+set_global_assignment -name DEVICE 10CL055YU484I7G
+set_global_assignment -name TOP_LEVEL_ENTITY MCXL
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:20:50  NOVEMBER 19, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+set_location_assignment PIN_R20 -to pmod_p14[0]
+set_location_assignment PIN_R18 -to pmod_p14[1]
+set_location_assignment PIN_T17 -to pmod_p14[2]
+set_location_assignment PIN_R17 -to pmod_p14[3]
+set_location_assignment PIN_P20 -to pmod_p14[4]
+set_location_assignment PIN_R19 -to pmod_p14[5]
+set_location_assignment PIN_T18 -to pmod_p14[6]
+set_location_assignment PIN_W20 -to pmod_p14[7]
+
+set_location_assignment PIN_U15 -to pmod_p15[0]
+set_location_assignment PIN_W17 -to pmod_p15[1]
+set_location_assignment PIN_T16 -to pmod_p15[2]
+set_location_assignment PIN_W15 -to pmod_p15[3]
+set_location_assignment PIN_V15 -to pmod_p15[4]
+set_location_assignment PIN_Y17 -to pmod_p15[5]
+set_location_assignment PIN_R16 -to pmod_p15[6]
+set_location_assignment PIN_W14 -to pmod_p15[7]
+
+set_location_assignment PIN_N16 -to pmod_p16[0]
+set_location_assignment PIN_N18 -to pmod_p16[1]
+set_location_assignment PIN_N19 -to pmod_p16[2]
+set_location_assignment PIN_M19 -to pmod_p16[3]
+set_location_assignment PIN_P17 -to pmod_p16[4]
+set_location_assignment PIN_N17 -to pmod_p16[5]
+set_location_assignment PIN_N20 -to pmod_p16[6]
+set_location_assignment PIN_M20 -to pmod_p16[7]
+
+set_location_assignment PIN_E13 -to pmod_p17[0]
+set_location_assignment PIN_E11 -to pmod_p17[1]
+set_location_assignment PIN_G15 -to pmod_p17[2]
+set_location_assignment PIN_G10 -to pmod_p17[3]
+set_location_assignment PIN_E14 -to pmod_p17[4]
+set_location_assignment PIN_E12 -to pmod_p17[5]
+set_location_assignment PIN_F11 -to pmod_p17[6]
+set_location_assignment PIN_F14 -to pmod_p17[7]
+
+set_location_assignment PIN_D10 -to pmod_p18[0]
+set_location_assignment PIN_G11 -to pmod_p18[1]
+set_location_assignment PIN_G9  -to pmod_p18[2]
+set_location_assignment PIN_B10 -to pmod_p18[3]
+set_location_assignment PIN_F10 -to pmod_p18[4]
+set_location_assignment PIN_E10 -to pmod_p18[5]
+set_location_assignment PIN_C10 -to pmod_p18[6]
+set_location_assignment PIN_F9  -to pmod_p18[7]
+
+set_location_assignment PIN_H6 -to led_mcxl[0]
+set_location_assignment PIN_J6 -to led_mcxl[1]
+set_location_assignment PIN_J7 -to led_mcxl[2]
+set_location_assignment PIN_K7 -to led_mcxl[3]
+
+set_location_assignment PIN_U19 -to button[2]
+set_location_assignment PIN_V16 -to button[0]
+set_location_assignment PIN_U20 -to button[1]
+
+set_location_assignment PIN_G1 -to clk_25M
+set_location_assignment PIN_B2 -to eth_mdc
+set_location_assignment PIN_B1 -to eth_mdio
+set_location_assignment PIN_J3 -to eth_rstn
+set_location_assignment PIN_J4 -to eth_rx_clk
+set_location_assignment PIN_G3 -to eth_rx_ctl
+set_location_assignment PIN_H1 -to eth_rx_dat[3]
+set_location_assignment PIN_J5 -to eth_rx_dat[2]
+set_location_assignment PIN_H2 -to eth_rx_dat[1]
+set_location_assignment PIN_E1 -to eth_rx_dat[0]
+set_location_assignment PIN_E4 -to eth_tx_clk
+set_location_assignment PIN_F1 -to eth_tx_ctl
+set_location_assignment PIN_F2 -to eth_tx_dat[3]
+set_location_assignment PIN_G4 -to eth_tx_dat[2]
+set_location_assignment PIN_E3 -to eth_tx_dat[0]
+set_location_assignment PIN_D2 -to eth_tx_dat[1]
+
+set_location_assignment PIN_U2 -to hbus1_clk0p
+set_location_assignment PIN_U1 -to hbus1_clk0n
+set_location_assignment PIN_N6 -to hbus1_clk1p
+set_location_assignment PIN_N5 -to hbus1_clk1n
+set_location_assignment PIN_P1 -to hbus1_cs0n
+set_location_assignment PIN_L6 -to hbus1_cs1n
+set_location_assignment PIN_M4 -to hbus1_rwds
+set_location_assignment PIN_N1 -to hbus1_dq[0]
+set_location_assignment PIN_R1 -to hbus1_dq[1]
+set_location_assignment PIN_M2 -to hbus1_dq[2]
+set_location_assignment PIN_N2 -to hbus1_dq[3]
+set_location_assignment PIN_M1 -to hbus1_dq[4]
+set_location_assignment PIN_M3 -to hbus1_dq[5]
+set_location_assignment PIN_P2 -to hbus1_dq[6]
+set_location_assignment PIN_R2 -to hbus1_dq[7]
+set_location_assignment PIN_M6 -to hbus1_rstn
+set_location_assignment PIN_M5 -to hbus1_intn
+
+set_location_assignment PIN_T4 -to hbus2_clk0p
+set_location_assignment PIN_T5 -to hbus2_clk0n
+set_location_assignment PIN_V3 -to hbus2_clk1p
+set_location_assignment PIN_V4 -to hbus2_clk1n
+set_location_assignment PIN_Y2 -to hbus2_cs0n
+set_location_assignment PIN_P4 -to hbus2_cs1n
+set_location_assignment PIN_P3 -to hbus2_rwds
+set_location_assignment PIN_W2 -to hbus2_dq[0]
+set_location_assignment PIN_P6 -to hbus2_dq[1]
+set_location_assignment PIN_V1 -to hbus2_dq[2]
+set_location_assignment PIN_W1 -to hbus2_dq[3]
+set_location_assignment PIN_V2 -to hbus2_dq[4]
+set_location_assignment PIN_Y1 -to hbus2_dq[5]
+set_location_assignment PIN_P7 -to hbus2_dq[6]
+set_location_assignment PIN_R6 -to hbus2_dq[7]
+set_location_assignment PIN_T3 -to hbus2_rstn
+set_location_assignment PIN_R5 -to hbus2_intn
+
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+
+set_global_assignment -name ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION ON
+set_global_assignment -name ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION ON
+set_global_assignment -name ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION ON
+
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_1993
+set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE PERFORMANCE"
+
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCQ256
+set_global_assignment -name SDC_FILE MCXL.out.sdc
+set_global_assignment -name QSYS_FILE qsys_vex.qsys
+set_global_assignment -name VHDL_FILE MCXL.vhd
+
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_clk0n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_rwds
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_rstn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_intn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_dq[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_cs1n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_cs0n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_clk1p
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_clk1n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus1_clk0p
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_clk0n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_clk0p
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_clk1n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_clk1p
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_cs0n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_cs1n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_dq[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_intn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_rstn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hbus2_rwds
+
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
