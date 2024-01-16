@@ -10,6 +10,7 @@
 This repository provides reference design projects for the MCXL SoM (Cyclone 10 LP).
 The designs implement the VexRiscv (open source RISC-V softcore) running FreeRTOS, as well as Intel Triple Speed Ethernet MAC and the SLL MBMC IP.
 They can be used to evaluate the MCXL SoM or as starting point for development.
+A user guide can be found [here](https://downloads.aries-embedded.de/products/MCXL/Hardware/mcxlreferencedesignsuserguide.pdf).
 
 ## 2. Reference Designs
 
